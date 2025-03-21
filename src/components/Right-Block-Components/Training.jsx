@@ -16,7 +16,7 @@ const Training = forwardRef((props, ref) => {
       </div>
       <div className="training-item">
         <h5>
-          <ins>TAP Academy , Banglore India .</ins>
+          <ins>TAP Academy , Banglore India</ins>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="tap-img">
             <img

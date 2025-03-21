@@ -32,22 +32,22 @@ const WorkExperience = forwardRef((props, ref) => {
                 India · Remote
               </p>
             </div>
-            <div className="col-md-6">
-              <div class={styleWork.maxcoImg}>
-                <img
-                  src="https://maxco.co.in/wp-content/uploads/2022/09/logo.png"
-                  alt=""
-                />
-              </div>
+            <div className={`${styleWork.maxcoImg} ${"col-md-6"}`}>
+              <img
+                src="https://maxco.co.in/wp-content/uploads/2022/09/logo.png"
+                alt=""
+              />
             </div>
           </div>
+          <div className="row">
+            <p>
+              Develop and execute comprehensive marketing strategies and
+              campaigns that align with the company's goals and objectives.
+              Lead, mentor, and manage a high-performing marketing. Monitor
+              brand consistency across marketing channels and materials.
+            </p>
+          </div>
         </div>
-        <p>
-          Develop and execute comprehensive marketing strategies and campaigns
-          that align with the company's goals and objectives. Lead, mentor, and
-          manage a high-performing marketing. Monitor brand consistency across
-          marketing channels and materials.
-        </p>
       </div>
     </div>
   );

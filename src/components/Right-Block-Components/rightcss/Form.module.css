@@ -1,33 +1,44 @@
 .contactTable {
-    margin-left: 10%;
+  margin-left: 10%;
 }
-.contactTable td{
-    padding-right: 30px !important;
-    padding-bottom: 20px;
+.contactTable td {
+  padding-right: 30px !important;
+  padding-bottom: 20px;
 }
-.cRow{
-    margin-top: 30px;
-    width: 90%;
+.cRow {
+  margin-top: 30px;
+  width: 90%;
 }
 .cRow div label {
-    color: #ffffffe6;
-    margin-left: 5px;
+  color: #ffffffe6;
+  margin-left: 5px;
 }
 form .cButton {
-    width: 13%;
-    height: 35px;
-    background-color: #ffffff77;
-    color: #ffffff;
-    margin-left: 2%;
-    margin-top: 2%;
-    border: none;
-    border-radius: 13px ;
+  width: 13%;
+  height: 35px;
+  background-color: #ffffff77;
+  color: #ffffff;
+  margin-left: 2%;
+  margin-top: 2%;
+  border: none;
+  border-radius: 13px;
 }
-form .cButton:hover{
-    background-color: #00000073;
-    color: #f5f5f596;
+form .cButton:hover {
+  background-color: #00000073;
+  color: #f5f5f596;
 }
 form .cButton:active {
-    color: #ffffff;
-    border: 1px solid rgba(172, 172, 172, 0.489);
+  color: #ffffff;
+  border: 1px solid rgba(172, 172, 172, 0.489);
+}
+
+@media (max-width: 600px) {
+  form .cButton {
+    width: 50%;
+    margin-left: 0px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+  }
 }
