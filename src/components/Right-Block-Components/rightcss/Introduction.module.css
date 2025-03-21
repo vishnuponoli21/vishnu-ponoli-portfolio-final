@@ -1,0 +1,22 @@
+.Intro {
+  height: 50vh;
+}
+.viewResumeDiv{
+    margin-left: 12px;
+    margin-top: 50px;
+   }
+   .viewResume {
+    text-decoration: none;
+    color: #ffcc00;
+    padding: 8px;
+    
+  }
+  .viewResume:hover {
+    background-color: #ffffff1d;
+    border-radius: 19px;
+  }
+  .viewResume:active{
+    text-decoration: underline;
+    color:#ffcc008c ;
+  }
+ 

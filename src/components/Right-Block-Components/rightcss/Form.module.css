@@ -1,0 +1,25 @@
+.contactTable {
+    margin-left: 10%;
+}
+.contactTable td{
+    padding-right: 30px !important;
+    padding-bottom: 20px;
+}
+.cRow{
+    margin-top: 30px;
+    width: 90%;
+}
+.cRow div label {
+    color: #ffffffe6;
+    margin-left: 5px;
+}
+form .cButton {
+    width: 13%;
+    background-color: #ffffff94;
+    color: #ffffff;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+form .cButton:hover {
+    border:#ffffff;
+}

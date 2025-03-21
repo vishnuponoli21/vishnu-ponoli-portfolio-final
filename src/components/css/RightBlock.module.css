@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-gfont1 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 100;
+  font-size: 15px;
+  line-height: 2em;
+  color: #333;
+}
+
+.anton-regular {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-gfont2 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+.rightBlock {
+    width: 70%;
+    position: absolute;
+    right: 0;
+  }
+.sectionWrapper {
+    padding: 5%;
+  }
+ 
+.oddSection {
+  background: url(/src/components/images/solid\ blue\ dark.jpg);
+  background-size: cover;
+  color: #d6d6d6c7;
+}
+.evenSection {
+  background: url(/src/components/images/Yellow\ Gradient\ Background.jpg);
+  background-size: cover;
+  color: #3a3a3af5;
+}
+.sectionTitle{
+  
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-style: "roboto-mainhead";
+}
+
+
+
+.navlist {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  z-index: +1;
+  overflow: hidden
+}
+.nbars {
+  position: fixed;
+  text-decoration: none;
+  color: #6b6b6b;
+  border: none;
+  display: flex;
+  align-items: start;
+  left: 95%;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 25px 90px 20px 0 ;
+  background-color: #ffffff5e;
+  background-blend-mode:darken;
+  backdrop-filter: blur(1.8px);
+}
+.nbars:hover {
+  margin-left: 8px;
+}
+.nbars span:active,.nbars:active {
+  color: black;
+}
+.nbars span {
+  margin-left: 20px;
+  font-size: large;
+  font-weight: 400;
+  line-height: 2.3em;
+  color: white;
+}
+.navlist ul {
+  position: fixed;
+  left: 103%;
+  list-style: none;
+  padding: 10px;
+  height: 80vh;
+  margin-top: 100px;
+  
+}
+
+.navlist ul li button{
+  text-decoration: none;
+  color: #040404cf;
+  border: none;
+  display: flex;
+  align-items: start;
+  position: relative;
+  width: 450px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 0 90px 20px 0 ;
+  background-color: #ffffff5e;
+  background-blend-mode:darken;
+  backdrop-filter: blur(1.8px);
+
+}
+.navlist ul li button span:last-child{
+  margin-left: 70px;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style:"Anton", serif ;
+  line-height: 2.3em;
+}
+.navlist ul li button span:first-child{
+  margin-left: 30px;
+  font-size: large;
+  font-weight: 400;
+  line-height: 2.3em;
+}
+.navlist ul li button:hover {
+  color: whitesmoke;
+  margin-left: 20px;
+}
+.navlist ul li button:active {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #050017;
+  margin: 0;
+  padding: 0;
+}
+footer p {
+  color: #ffffff9e;
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
+  text-align: center;
+}
