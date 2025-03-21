@@ -1,108 +1,120 @@
-
 /* Google fonts import*/
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-  .robotoGfont2 {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+.robotoGfont2 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 /* Left Block main */
 .leftBlock {
-    height: 100vh;
-    width: 30%;
-    text-align: center;
-    overflow:hidden;
-    position: fixed;
-    left: 0;
-    background-color:#222;
+  height: 100vh;
+  width: 30%;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  background-color: #222;
 }
-.side{
-    position: relative;
-    top:40%;
-    margin-left: 5px;
+.side {
+  position: relative;
+  top: 40%;
+  margin-left: 5px;
 }
 .leftBlock header {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    vertical-align: middle;
-    position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  vertical-align: middle;
+  position: relative;
 }
 .content {
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    right: 0;
-    width:100%;
-    margin:0 auto;
-    padding: 20px;
-    /* backdrop-filter: blur(2px) saturate(80%); */
-  }
-.content h1{
-    font-size:36px ;
-    color: white;
-    line-height: 1;
-    margin: 0;
-    }
-                                                    /* header conent Occupation */
-.content p{
-    font-size: 20px;
-    color: white;
-    }
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  /* backdrop-filter: blur(2px) saturate(80%); */
+}
+.content h1 {
+  font-size: 36px;
+  color: white;
+  line-height: 1;
+  margin: 0;
+}
+/* header conent Occupation */
+.content p {
+  font-size: 20px;
+  color: white;
+}
 
-.side ul{
-    list-style: none;
-    padding: 0 !important;
-    display: block;
+.side ul {
+  list-style: none;
+  padding: 0 !important;
+  display: block;
 }
 .side ul li {
-    display: block;
-    margin: 0 0 19px 0;
-    background-color: #ffffff90;
-    color: rgba(0, 0, 0, 0.249);
-    width: max-content;
-    border-radius: 100%;
-    padding: 4px ;
+  display: block;
+  margin: 0 0 19px 0;
+  background-color: #ffffff90;
+  color: rgba(0, 0, 0, 0.249);
+  width: max-content;
+  border-radius: 100%;
+  padding: 4px;
 }
 .side ul li a {
-    display: block;
-    font-size: 20px;
-    color: #040404cf;
-    height: 40px;
-    width: 40px;
-    line-height: 35px;
-    text-align: center;
-    overflow: hidden;
+  display: block;
+  font-size: 20px;
+  color: #040404cf;
+  height: 40px;
+  width: 40px;
+  line-height: 35px;
+  text-align: center;
+  overflow: hidden;
 }
 .side ul li a:hover {
-    color: #6e6d6d;
+  color: #6e6d6d;
 }
-.side ul li:hover{
-    margin-left: 5px;
-  }
+.side ul li:hover {
+  margin-left: 5px;
+}
 .profileImg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index:-1;
-    width: 100%;
-    height: 100%;
-    background-image: url(/src/components/images/myImage.jpg);
-    background-size: cover;
-    background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/components/images/myImage.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.profileImg:before{
-    content:"";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(-20deg,
-    hsla(20, 92%, 40%, 0.5) 0%, rgba(208, 84, 6, 0.5)20%, transparent 30%,
-    transparent 100%);
+.profileImg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    -20deg,
+    hsla(20, 92%, 40%, 0.5) 0%,
+    rgba(208, 84, 6, 0.5) 20%,
+    transparent 30%,
+    transparent 100%
+  );
+}
+
+@media (max-width: 600px) {
+  .leftBlock {
+    width: 100%;
+    position: relative;
   }
+  .profileImg {
+    position: relative !important;
+  }
+}

@@ -1,47 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 .cfull {
-    position: fixed;
-    width:100%;
-    height: 100%;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    justify-content: center;
-    background: url(/src/components/images/solidBlueDark.jpg);
-    background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  background: url(/src/components/images/solidBlueDark.jpg);
+  background-size: cover;
 }
 .cfull .fContent {
-    text-align: center;  
-    color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
 .codesymbol {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 150px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
 }
-.cfull h1 ,.cfull h5 {
-    mix-blend-mode:difference;
+.cfull h1,
+.cfull h5 {
+  mix-blend-mode: difference;
 }
 .cfull h2 {
-    position: relative;
-    bottom: 30px;
-    margin-left:50px;
-    font-family: cursive;
-    font-weight: 100;
-    font-style: normal;
-    mix-blend-mode:difference;
+  position: relative;
+  bottom: 30px;
+  margin-left: 50px;
+  font-family: cursive;
+  font-weight: 100;
+  font-style: normal;
+  mix-blend-mode: difference;
 }
 .cfull h1:last-child {
-    position: relative;
-    bottom:80px ;
+  position: relative;
+  bottom: 80px;
 }
-.dots h1 div{
-    display: inline-block;
+.dots h1 div {
+  display: inline-block;
 }
 .dots h1 {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .cfull {
+    width: 100%;
+  }
+  .cfull h2 {
+    position: relative;
+    top: 30px;
+    right: 20px;
+    font-size: xx-large;
+  }
+  .cfull h2 span {
+    font-size: 50px;
+  }
 }

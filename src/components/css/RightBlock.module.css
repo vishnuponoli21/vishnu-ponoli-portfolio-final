@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 .roboto-gfont1 {
   font-family: "Roboto", serif;
@@ -22,21 +22,18 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
-
-
 .rightBlock {
-    width: 70%;
-    position: absolute;
-    right: 0;
-  }
+  width: 70%;
+  position: absolute;
+  right: 0;
+}
 .sectionWrapper {
-    padding: 5%;
-  }
- 
+  padding: 5%;
+}
+
 .oddSection {
   background: url(/src/components/images/solidBlueDark.jpg);
   background-size: cover;
@@ -47,21 +44,18 @@
   background-size: cover;
   color: #3a3a3af5;
 }
-.sectionTitle{
-  
+.sectionTitle {
   margin-bottom: 30px;
   font-weight: 400;
   font-style: "roboto-mainhead";
 }
-
-
 
 .navlist {
   position: relative;
   display: flex;
   justify-content: end;
   z-index: +1;
-  overflow: hidden
+  overflow: hidden;
 }
 .nbars {
   position: fixed;
@@ -75,15 +69,16 @@
   height: 60px;
   padding: 10px;
   border-radius: 30px;
-  margin: 25px 90px 20px 0 ;
+  margin: 25px 90px 20px 0;
   background-color: #ffffff5e;
-  background-blend-mode:darken;
+  background-blend-mode: darken;
   backdrop-filter: blur(1.8px);
 }
 .nbars:hover {
   margin-left: 8px;
 }
-.nbars span:active,.nbars:active {
+.nbars span:active,
+.nbars:active {
   color: black;
 }
 .nbars span {
@@ -100,10 +95,9 @@
   padding: 10px;
   height: 80vh;
   margin-top: 100px;
-  
 }
 
-.navlist ul li button{
+.navlist ul li button {
   text-decoration: none;
   color: #040404cf;
   border: none;
@@ -114,20 +108,19 @@
   height: 60px;
   padding: 10px;
   border-radius: 30px;
-  margin: 0 90px 20px 0 ;
+  margin: 0 90px 20px 0;
   background-color: #ffffff5e;
-  background-blend-mode:darken;
+  background-blend-mode: darken;
   backdrop-filter: blur(1.8px);
-
 }
-.navlist ul li button span:last-child{
+.navlist ul li button span:last-child {
   margin-left: 70px;
   font-size: 1.2em;
   font-weight: 400;
-  font-style:"Anton", serif ;
+  font-style: "Anton", serif;
   line-height: 2.3em;
 }
-.navlist ul li button span:first-child{
+.navlist ul li button span:first-child {
   margin-left: 30px;
   font-size: large;
   font-weight: 400;
@@ -152,4 +145,14 @@ footer p {
   padding: 0;
   font-size: 8px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .rightBlock {
+    width: 100%;
+    position: relative;
+  }
+  .sectionWrapper {
+    padding: 10%;
+  }
 }
