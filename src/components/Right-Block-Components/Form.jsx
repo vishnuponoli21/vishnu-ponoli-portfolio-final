@@ -32,6 +32,16 @@ function FormInput() {
       console.log(e);
     }
   };
+
+  const submited = () => {
+    if (
+      username.current.value == "" &&
+      email.current.value == "" &&
+      msg.current.value == ""
+    )
+      alert("please fill the form before submission");
+    else alert("form submited");
+  };
   return (
     <form onSubmit={handleSave}>
       <div className="container">
@@ -78,7 +88,11 @@ function FormInput() {
           </div>
         </div>
 
-        <button type="submit" className={`${styleForm.cButton}`}>
+        <button
+          type="submit"
+          className={`${styleForm.cButton}`}
+          onClick={submited}
+        >
           Submit
         </button>
       </div>
