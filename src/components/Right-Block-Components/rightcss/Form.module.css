@@ -15,11 +15,19 @@
 }
 form .cButton {
     width: 13%;
-    background-color: #ffffff94;
+    height: 35px;
+    background-color: #ffffff77;
     color: #ffffff;
     margin-left: 2%;
     margin-top: 2%;
+    border: none;
+    border-radius: 13px ;
 }
-form .cButton:hover {
-    border:#ffffff;
+form .cButton:hover{
+    background-color: #00000073;
+    color: #f5f5f596;
+}
+form .cButton:active {
+    color: #ffffff;
+    border: 1px solid rgba(172, 172, 172, 0.489);
 }

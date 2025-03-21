@@ -83,7 +83,7 @@ const Form = forwardRef((props, ref) => {
             </div>
           </div>
 
-          <button type="button" className={`${"btn"} ${styleForm.cButton}`}>
+          <button type="button" className={`${styleForm.cButton}`}>
             Submit
           </button>
         </div>
