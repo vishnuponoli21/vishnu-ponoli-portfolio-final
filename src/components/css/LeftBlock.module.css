@@ -113,8 +113,10 @@
   .leftBlock {
     width: 100%;
     position: relative;
+    z-index: -2;
   }
   .profileImg {
-    position: relative !important;
+    position: absolute;
+    z-index: -1;
   }
 }

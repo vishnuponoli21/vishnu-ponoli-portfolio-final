@@ -155,4 +155,8 @@ footer p {
   .sectionWrapper {
     padding: 10%;
   }
+  .nbars {
+    position: fixed;
+    z-index: 2;
+  }
 }
