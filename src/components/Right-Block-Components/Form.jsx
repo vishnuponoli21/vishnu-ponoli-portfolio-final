@@ -121,7 +121,7 @@ const Form = forwardRef((props, ref) => {
             <td>
               <FontAwesomeIcon icon={faEnvelope} size="lg" />
             </td>
-            <td>vishnuponoli21gmail.com</td>
+            <td>vishnuponoli21@gmail.com</td>
           </tr>
         </thead>
         <thead>
