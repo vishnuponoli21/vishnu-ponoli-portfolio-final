@@ -13,18 +13,18 @@ import { addDoc, collection } from "@firebase/firestore";
 function FormInput() {
   const username = useRef();
   const email = useRef();
-  const message = useRef();
+  const msg = useRef();
   const store = collection(firestore, "messages");
   const handleSave = async (e) => {
     e.preventDefault();
     console.log(username.current.value);
     console.log(email.current.value);
-    console.log(message.current.value);
+    console.log(msg.current.value);
 
     let data1 = {
       name: username.current.value,
+      message: msg.current.value,
       email: email.current.value,
-      message: message.current.value,
     };
     try {
       addDoc(store, data1);
@@ -73,7 +73,7 @@ function FormInput() {
               className="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
-              ref={message}
+              ref={msg}
             ></textarea>
           </div>
         </div>
