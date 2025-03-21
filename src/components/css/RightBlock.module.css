@@ -38,12 +38,12 @@
   }
  
 .oddSection {
-  background: url(/src/components/images/solid\ blue\ dark.jpg);
+  background: url(/src/components/images/solidBlueDark.jpg);
   background-size: cover;
   color: #d6d6d6c7;
 }
 .evenSection {
-  background: url(/src/components/images/Yellow\ Gradient\ Background.jpg);
+  background: url(/src/components/images/yelllow.jpg);
   background-size: cover;
   color: #3a3a3af5;
 }
