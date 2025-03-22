@@ -44,12 +44,14 @@ const WorkExperience = forwardRef((props, ref) => {
             </div>
           </div>
           <div className="row">
-            <p>
-              Develop and execute comprehensive marketing strategies and
-              campaigns that align with the company's goals and objectives.
-              Lead, mentor, and manage a high-performing marketing. Monitor
-              brand consistency across marketing channels and materials.
-            </p>
+            <div className="col-md-10 col-sm-12">
+              <p>
+                Develop and execute comprehensive marketing strategies and
+                campaigns that align with the company's goals and objectives.
+                Lead, mentor, and manage a high-performing marketing. Monitor
+                brand consistency across marketing channels and materials.
+              </p>
+            </div>
           </div>
         </div>
       </div>
