@@ -80,7 +80,6 @@ function LeftBlock() {
     <>
       <div className={styleLeft.leftBlock}>
         <header>
-          <SideIcon />
           <div className={styleLeft.content}>
             <h1 ref={p1} className={styleLeft.robotoGfont2}>
               VISHNU PONOLI
@@ -88,6 +87,7 @@ function LeftBlock() {
             <p ref={p2} className="lead">
               Software Engineer
             </p>
+            <SideIcon />
           </div>
           <div className={styleLeft.profileImg}></div>
         </header>
