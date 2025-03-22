@@ -51,11 +51,15 @@
   font-size: 20px;
   color: white;
 }
+.side {
+  width: min-content;
+}
 
 .side ul {
   list-style: none;
   padding: 0 !important;
   display: block;
+  width: min-content;
 }
 .side ul li {
   display: block;
@@ -67,6 +71,7 @@
   padding: 4px;
 }
 .side ul li a {
+  margin-top: 3px;
   display: block;
   font-size: 20px;
   color: #040404cf;

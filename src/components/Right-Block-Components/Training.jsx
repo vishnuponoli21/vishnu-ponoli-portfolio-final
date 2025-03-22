@@ -1,4 +1,5 @@
 import { forwardRef, useRef, useImperativeHandle } from "react";
+import styleTrain from "./rightcss/Training.module.css";
 import styleRight from "../css/RightBlock.module.css";
 
 const Training = forwardRef((props, ref) => {
@@ -9,13 +10,13 @@ const Training = forwardRef((props, ref) => {
     },
   }));
   return (
-    <div className="Training" ref={train}>
+    <div className={styleTrain.training} ref={train}>
       <div className={styleRight.sectionTitle}>
         <h2 className="roboto-mainhead">Training</h2>
         <hr />
       </div>
       <div className="training-item">
-        <h5>
+        <h4>
           <ins>TAP Academy , Banglore India</ins>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="tap-img">
@@ -24,20 +25,20 @@ const Training = forwardRef((props, ref) => {
               alt="tap academy"
             />
           </span>
-        </h5>
-        <h6 className="quicksand-para">Full Stack Web Development</h6>
-        <span>
+        </h4>
+        <h5 className="quicksand-para">Full Stack Web Development</h5>
+        <p>
           Skilled full-stack web developer with expertise in building dynamic
           and responsive web applications using front-end technologies such as
           HTML, CSS, Javascript and Bootstrap ,and Back-end technologies Java ,
           Spring , Hibernate . Proficient in designing and implementing robust
           back-end solutions , while creating seamless and interactive front-end
           experiences.
-        </span>
+        </p>
       </div>
       <hr />
       <div className="training-item">
-        <h5>
+        <h4>
           <ins>KWICKLAB Infotech , Kakkanad , Kerala</ins>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span>
@@ -46,14 +47,14 @@ const Training = forwardRef((props, ref) => {
               alt="kwick lab"
             />
           </span>
-        </h5>
-        <h6 className="quicksand-para">Android Application Development</h6>
-        <span>
+        </h4>
+        <h5 className="quicksand-para">Android Application Development</h5>
+        <p>
           Passionate and detail-oriented Android app developer with extensive
           experience in building robust, high-performance mobile applications
           using Java. Proficient in Android Studio, Java, and integrating APIs,
           while focusing on delivering smooth user interface.
-        </span>
+        </p>
       </div>
     </div>
   );

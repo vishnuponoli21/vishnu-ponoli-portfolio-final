@@ -9,6 +9,9 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
 import { firestore } from "../firebase";
 import { addDoc, collection } from "@firebase/firestore";
 
+import { analytics } from "../firebase";
+import { logEvent } from "firebase/analytics";
+
 //Form
 function FormInput() {
   const username = useRef();
@@ -28,6 +31,7 @@ function FormInput() {
     };
     try {
       addDoc(store, data1);
+      orderBy("timestamp", "desc");
     } catch (e) {
       console.log(e);
     }
@@ -91,7 +95,10 @@ function FormInput() {
         <button
           type="submit"
           className={`${styleForm.cButton}`}
-          onClick={submited}
+          onClick={() => {
+            submited();
+            logEvent(analytics, "submit clicked form submited");
+          }}
         >
           Submit
         </button>

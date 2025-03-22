@@ -2,6 +2,10 @@ import styleIntro from "./rightcss/Introduction.module.css";
 import styleRight from "../css/RightBlock.module.css";
 import "bootstrap/dist/css/bootstrap.css";
 import pdf from "../pdf/VISHNU PONOLI CV (1).pdf";
+
+import { logEvent } from "firebase/analytics";
+import { analytics } from "../firebase";
+
 export function Introduction() {
   return (
     <div className={styleIntro.Intro}>
@@ -29,7 +33,14 @@ export function Introduction() {
         </div>
       </div>
       <div className={styleIntro.viewResumeDiv}>
-        <a className={styleIntro.viewResume} href={pdf} target="_blank">
+        <a
+          className={styleIntro.viewResume}
+          href={pdf}
+          target="_blank"
+          onClick={() => {
+            logEvent(analytics, "resume viewed");
+          }}
+        >
           View Resume
         </a>
       </div>

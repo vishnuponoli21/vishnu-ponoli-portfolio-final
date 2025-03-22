@@ -33,7 +33,7 @@ function FirstAnim() {
       repeat: -1,
     });
 
-    gsap.to(full.current, { y: 10000, duration: 19, delay: 3, opacity: 0 });
+    gsap.to(full.current, { y: 5000, duration: 18, delay: 3, opacity: 0 });
   });
 
   return (
