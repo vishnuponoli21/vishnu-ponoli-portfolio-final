@@ -67,8 +67,8 @@
   background-color: #ffffff90;
   color: rgba(0, 0, 0, 0.249);
   width: max-content;
-  border-radius: 100%;
-  padding: 4px;
+  border-radius: 10px;
+  padding: 5px;
 }
 .side ul li a {
   margin-top: 3px;
